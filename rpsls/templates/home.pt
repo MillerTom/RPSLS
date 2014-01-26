@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>${project}</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+  <meta name="keywords" content="python web application" />
+  <meta name="description" content="pyramid web application" />
+  <link rel="shortcut icon" href="${request.static_url('rpsls:static/img/favicon.ico')}" />
+  <link rel="stylesheet" href="${request.static_url('rpsls:static/css/bootstrap.min.css')}">
+</head>
+
+<body style="padding-top: 100px;">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">${project}</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a> </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-offset-4 col-lg-4" style="margin-bottom: 30px;">
+            <h2 style="text-align: center;">Rock  Paper  Scissors  Lizard  Spock</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-4 col-lg-4">
+            <form action="/throw" method="post">
+                <select class="form-control" name="sign" id="sign" style="min-height: 100px; margin-bottom: 20px;">
+                    <option>Rock</option>
+                    <option>Paper</option>
+                    <option>Scissors</option>
+                    <option>Lizard</option>
+                    <option>Spock</option>
+                </select>
+                <input type="submit" class="btn btn-primary btn-block" value="Throw" />
+            </form>
+        </div>
+    </div>
+</div>
+<script src="${request.static_url('rpsls:static/js/jquery-1.11.0.min.js')}"></script>
+<script src="${request.static_url('rpsls:static/js/bootstrap.min.js')}"></script>
+</body>
+
+</html>
