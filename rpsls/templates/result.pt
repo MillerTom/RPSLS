@@ -7,6 +7,7 @@
   <meta name="description" content="pyramid web application" />
   <link rel="shortcut icon" href="${request.static_url('rpsls:static/img/favicon.ico')}" />
   <link rel="stylesheet" href="${request.static_url('rpsls:static/css/bootstrap.min.css')}">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body style="padding-top: 100px;">
@@ -36,7 +37,7 @@
             <hr>
             <p><em>${explanation}</em></p>
             <p style="font-size: 18px;"><strong>${result}</strong></p>
-            <p>Session Scores: Win: <strong style="color: #009a00; font-size: 16px;">${win}</strong>, Lose: <strong style="color: #e70000; font-size: 16px;">${lose}</strong>, Tie: <strong style="font-size: 16px;">${tie}</strong></p>
+            <p><i class="fa fa-trophy"></i> <strong style="color: #009a00; font-size: 16px;"> ${win} </strong> | <i class="fa fa-thumbs-o-down"></i><strong style="color: #e70000; font-size: 16px;"> ${lose} </strong> | <i class="fa fa-arrows-h"></i><strong style="font-size: 16px;"> ${tie} </strong></p>
             <hr>
             <p style="margin-top: 10px;">
                 <a href="/" class="btn btn-success btn-sm" style="margin-right: 10px;">Play again?</a>
