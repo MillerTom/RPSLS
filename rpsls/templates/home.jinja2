@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>${project}</title>
+  <title>{{project}}</title>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
   <meta name="keywords" content="python web application" />
   <meta name="description" content="pyramid web application" />
-  <link rel="shortcut icon" href="${request.static_url('rpsls:static/img/favicon.ico')}" />
-  <link rel="stylesheet" href="${request.static_url('rpsls:static/css/bootstrap.min.css')}">
+  <link rel="shortcut icon" href="{{'rpsls:static/img/favicon.ico'|static_url}}" />
+  <link rel="stylesheet" href="{{'rpsls:static/css/bootstrap.min.css'|static_url}}">
 </head>
 
 <body style="padding-top: 100px;">
@@ -19,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">${project}</a>
+            <a class="navbar-brand" href="/">{{project}}</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -49,8 +49,8 @@
         </div>
     </div>
 </div>
-<script src="${request.static_url('rpsls:static/js/jquery-1.11.0.min.js')}"></script>
-<script src="${request.static_url('rpsls:static/js/bootstrap.min.js')}"></script>
+<script src="{{'rpsls:static/js/jquery-1.11.0.min.js'|static_url}}"></script>
+<script src="{{'rpsls:static/js/bootstrap.min.js'|static_url}}"></script>
 </body>
 
 </html>

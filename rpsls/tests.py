@@ -24,6 +24,7 @@ def _registerRoutes(config):
 
 class ViewTests(unittest.TestCase):
     def setUp(self):
+        import rpsls
         self.config = testing.setUp()
 
     def tearDown(self):

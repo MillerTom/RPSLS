@@ -2,7 +2,7 @@ from pyramid.view import view_config
 from pyramid.httpexceptions import HTTPFound
 
 
-@view_config(route_name='home', renderer='templates/home.pt')
+@view_config(route_name='home', renderer='home.jinja2')
 def home_view(request):
     """
     Home view. Also initialize the scoreboard.
@@ -20,7 +20,7 @@ def home_view(request):
 
 
 
-@view_config(route_name='play', renderer='templates/result.pt')
+@view_config(route_name='play', renderer='result.jinja2')
 def play(request, **kwargs):
     """
     A view function to play the game.
